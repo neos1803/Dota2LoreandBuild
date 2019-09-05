@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_hero"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_hero_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@string/hero_photo" />
+
+        <TextView
+            android:id="@+id/tv_hero_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_hero_photo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_hero_name_lore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@id/tv_hero_name"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/img_hero_photo"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_text_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/role"
+            android:layout_toEndOf="@id/img_hero_photo"
+            android:layout_below="@id/tv_hero_name_lore"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_hero_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text_role"
+            android:layout_toEndOf="@id/img_hero_photo"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_text_type"
+            android:text="@string/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hero_role"
+            android:layout_toEndOf="@id/img_hero_photo"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_hero_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tv_text_type"
+            android:layout_toEndOf="@id/img_hero_photo"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_text_complexity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complexity"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/tv_hero_type"
+            android:layout_toEndOf="@id/img_hero_photo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_hero_complexity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tv_text_complexity"
+            android:layout_toEndOf="@id/img_hero_photo"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type_of_skill"
+            android:layout_below="@id/tv_hero_complexity"
+            android:layout_toEndOf="@+id/img_hero_photo"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_skill"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text1"
+            android:layout_toEndOf="@id/img_hero_photo"
+            android:layout_marginStart="8dp"
+            tools:src="Build list" />
+
+        <HorizontalScrollView
+            android:id="@+id/nested1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/tv_skill" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/img_hero_set1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:contentDescription="@string/set_hero" />
+
+                <ImageView
+                    android:id="@+id/img_hero_set2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="32dp"
+                    android:contentDescription="@string/set_hero" />
+
+                <ImageView
+                    android:id="@+id/img_hero_set3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="32dp"
+                    android:contentDescription="@string/set_hero" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/lore"
+            android:textSize="16sp"
+            android:layout_below="@id/nested1"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_hero_lore"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/tv_text2"
+            tools:src="Lore"/>
+
+    </RelativeLayout>
+
+</ScrollView>

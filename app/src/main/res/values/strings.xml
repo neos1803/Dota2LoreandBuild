@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dota 2 Lore and Build</string>
+    <string name="role">Role</string>
+    <string name="type">Type</string>
+    <string name="complexity">Complexity</string>
+    <string name="type_of_skill">Type of Skill</string>
+    <string name="lore">Lore</string>
+    <string name="set_hero">Set Hero</string>
+    <string name="hero_photo">Hero Photo</string>
+    <string name="about">about</string>
+</resources>
